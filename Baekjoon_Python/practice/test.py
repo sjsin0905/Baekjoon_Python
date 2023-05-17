@@ -1,22 +1,4 @@
-from random import *
-rainfall = [0.5, 0.1, 0, 1.1,	3.8, 0.3, 41.1, 0.1, 15.6, 5.6, 0, 9.6, 11.7, 12.9, 0.1, 71, 0, 0, 12.4, 4.4, 25.3, 0, 4.6, 23.9, 0.1, 0, 0.1, 26.4, 20.7, 0.3, 1.4, 13.2, 12.1, 39.4, 0, 15, 0.4, 0, 1.7, 0, 23.3, 0.1, 5.4, 0, 0.2, 0, 0, 66.5, 0, 0.4, 52.5, 1.5, 13.9, 1.7, 1.7, 0, 2.3, 0.1, 0, 1.1, 0.1, 2.1, 0.2, 5.9, 2, 13.2, 0.6, 2, 0, 0, 0, 2.7, 56.4, 6.7, 6.2, 0.1, 8.5, 9.7, 11.3, 3.6, 0.3, 3.9, 0.2, 38.1, 0, 2.1, 0.8, 0.8, 0.2, 0.1, 5.7, 13.8, 0, 0, 14.1, 0, 1.2, 4.8, 0, 2.2, 5.5, 1.9, 0, 7.1, 1.8, 0, 2, 0, 1.6, 56.3, 0, 2.5, 7.5, 3.1, 11.3, 0, 0, 0.2, 0.2, 20.9, 0.2, 0, 3.5, 4.6, 6.3, 5.7, 2.3, 0.3, 0.4, 4.5, 0.1]
-count = 0
-time = []
-for rainfall in rainfall:
-    if 0.0 <= rainfall <= 2.0:
-        time.append(round(random()*3, 1))
-        count += 1
-    elif 2.0 < rainfall <= 10.0:
-        time.append(round(random()*4 + 2, 1))
-        count += 1
-    elif 10.0 < rainfall <= 30.0:
-        time.append(round(random()*5 + 5, 1))
-        count += 1
-    elif 30.0 < rainfall <= 100.0:
-        time.append(round(random()*5 + 10, 1))
-        count += 1
-    else:
-        time.append(round(random()*7 + 13, 1))
-        count += 1
+import datetime
 
-print(time)
+dt_now = datetime.datetime.now()
+print(dt_now)
