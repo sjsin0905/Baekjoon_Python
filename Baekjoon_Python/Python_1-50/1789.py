@@ -6,4 +6,3 @@ while count <= S:
     if count > S:
         print(N-1)
     N += 1
-
