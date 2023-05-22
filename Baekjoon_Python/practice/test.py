@@ -1,23 +1,2 @@
-B = input()
-h = 10
-if B[0] == "(":
-    for i in range(1, len(B)):
-        if B[i-1] == "(" and B[i] == "(":
-            h += 5
-        elif B[i-1] == ")" and B[i] == "(":
-            h += 10
-        elif B[i-1] == "(" and B[i] == ")":
-            h += 10
-        elif B[i-1] == ")" and B[i] == ")":
-            h += 5
-elif B[0] == ")":
-    for i in range(1, len(B)):
-        if B[i-1] == "(" and B[i] == "(":
-            h += 5
-        elif B[i-1] == ")" and B[i] == "(":
-            h += 10
-        elif B[i-1] == "(" and B[i] == ")":
-            h += 10
-        elif B[i-1] == ")" and B[i] == ")":
-            h += 5
-print(h)
+#  r, e, c가 주어진다. r은 광고를 하지 않았을 때 수익, e는 광고를 했을 때의 수익, c는 광고 비용
+r, e, c = input().split()
