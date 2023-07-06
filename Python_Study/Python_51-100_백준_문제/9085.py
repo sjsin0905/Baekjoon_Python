@@ -4,3 +4,5 @@ for i in range(n):
     num = int(input())
     nums = sum(list(map(int, input().split())))
     print(nums)
+
+    
